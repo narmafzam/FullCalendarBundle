@@ -103,5 +103,5 @@ interface EventEntityInterface
     /**
      * @return array
      */
-    public function AttributeToArray(): array;
+    public function toArray(): array;
 }

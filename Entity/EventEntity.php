@@ -8,6 +8,7 @@
 
 namespace Farshadi73\FullCalenderBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Farshadi73\FullCalenderBundle\Entity\Interfaces\AttributeInterface;
@@ -74,6 +75,14 @@ class EventEntity implements EventEntityInterface
      * @ORM\OneToMany(targetEntity="Farshadi73\FullCalenderBundle\Entity\Attribute", mappedBy="event", cascade={"persist", "remove"})
      */
     protected $attributes;
+
+    /**
+     * EventEntity constructor.
+     */
+    public function __construct()
+    {
+        $this->attributes = new ArrayCollection();
+    }
 
     /**
      * @return null|string
@@ -227,18 +236,31 @@ class EventEntity implements EventEntityInterface
     /**
      * @return array
      */
-    public function AttributeToArray(): array
+    public function toArray(): array
     {
-        $attributes = array();
+        $event      = array();
+
+        if (!is_null($this->getEventId())) {
+            $event['id'] = $this->getEventId();
+        }
+
+        $event['title'] = $this->title;
+        $event['start'] = $this->startDatetime->format("Y-m-d\TH:i:sP");
 
         foreach ($this->getAttributes() as $attribute) {
 
             if ($attribute instanceof AttributeInterface) {
 
-                $attributes[$attribute->getAttr()] = $attribute->getValue();
+                $event['attributes'][$attribute->getAttr()] = $attribute->getValue();
             }
         }
 
-        return $attributes;
+        if ($this->endDatetime !== null) {
+            $event['end'] = $this->endDatetime->format("Y-m-d\TH:i:sP");
+        }
+
+        $event['allDay'] = $this->allDay;
+
+        return $event;
     }
 }

@@ -8,6 +8,8 @@
 
 namespace Farshadi73\FullCalenderBundle\Controller;
 
+use Farshadi73\FullCalenderBundle\Event\CalendarEvent;
+use Farshadi73\FullCalenderBundle\Event\Interfaces\CalendarEventInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
@@ -49,11 +51,26 @@ class CalendarController extends Controller
      */
     public function loadCalendarAction(Request $request): Response
     {
-        $startDatetime = date('Y-M-D', $request->get('start'));
-        $endDatetime   = date('Y-M-D', $request->get('end'));
+        $startDatetime = new \DateTime();
+        $startDatetime->setTimestamp($request->get('start'));
+
+        $endDatetime = new \DateTime();
+        $endDatetime->setTimestamp($request->get('end'));
+
+        $events        = $this->getEventDispatcher()->dispatch(CalendarEventInterface::CONFIGURE,
+            new CalendarEvent($startDatetime, $endDatetime, $request))->getEvents();
 
         $response = new Response();
         $response->headers->set('Content-Type', 'application/json');
+
+        $returnEvents = array();
+
+        foreach ($events as $event) {
+
+            $returnEvents[] = $event->toArray();
+        }
+
+        $response->setContent(json_encode($returnEvents));
 
         return $response;
     }
