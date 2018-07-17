@@ -6,7 +6,7 @@
  * Date: 7/17/18
  */
 
-namespace Narmafzam\ArchiveBundle;
+namespace Farshadi73\FullCalenderBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
