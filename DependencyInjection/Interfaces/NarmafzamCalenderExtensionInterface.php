@@ -8,13 +8,11 @@
 
 namespace Narmafzam\FullCalenderBundle\DependencyInjection\Interfaces;
 
-use Symfony\Component\Config\Definition\ConfigurationInterface as BaseInterface;
-
 /**
- * Interface ConfigurationInterface
+ * Interface NarmafzamCalenderExtensionInterface
  * @package Narmafzam\FullCalenderBundle\DependencyInjection\Interfaces
  */
-interface ConfigurationInterface extends BaseInterface
+interface NarmafzamCalenderExtensionInterface
 {
 
 }

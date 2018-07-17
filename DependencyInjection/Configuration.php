@@ -1,19 +1,19 @@
 <?php
 /**
  * This file is part of fullcalendarbundle
- * Copyrighted by Farshadi73 (Farzam Webnegar Sivan Co.), info@farshadi73.com
+ * Copyrighted by Narmafzam (Farzam Webnegar Sivan Co.), info@narmafzam.com
  * Created by farshad
  * Date: 7/17/18
  */
 
-namespace Farshadi73\FullCalenderBundle\DependencyInjection;
+namespace Narmafzam\FullCalenderBundle\DependencyInjection;
 
-use Farshadi73\FullCalenderBundle\DependencyInjection\Interfaces\ConfigurationInterface;
+use Narmafzam\FullCalenderBundle\DependencyInjection\Interfaces\ConfigurationInterface;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 
 /**
  * Class Configuration
- * @package Farshadi73\FullCalenderBundle\DependencyInjection
+ * @package Narmafzam\FullCalenderBundle\DependencyInjection
  */
 class Configuration implements ConfigurationInterface
 {
