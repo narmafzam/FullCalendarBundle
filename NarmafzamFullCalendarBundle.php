@@ -11,10 +11,10 @@ namespace Narmafzam\FullCalenderBundle;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * Class FullCalendarBundle
+ * Class NarmafzamFullCalendarBundle
  * @package Narmafzam\FullCalenderBundle
  */
-class FullCalendarBundle extends Bundle
+class NarmafzamFullCalendarBundle extends Bundle
 {
 
 }
