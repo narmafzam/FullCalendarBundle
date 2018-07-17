@@ -1,22 +1,22 @@
 <?php
 /**
  * This file is part of fullcalendarbundle
- * Copyrighted by Narmafzam (Farzam Webnegar Sivan Co.), info@narmafzam.com
+ * Copyrighted by Farshadi73 (Farzam Webnegar Sivan Co.), info@farshadi73.com
  * Created by farshad
  * Date: 7/17/18
  */
 
-namespace Narmafzam\FullCalenderBundle\Entity;
+namespace Farshadi73\FullCalenderBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-use Narmafzam\FullCalenderBundle\Entity\Interfaces\AttributeInterface;
-use Narmafzam\FullCalenderBundle\Entity\Interfaces\EventEntityInterface;
+use Farshadi73\FullCalenderBundle\Entity\Interfaces\AttributeInterface;
+use Farshadi73\FullCalenderBundle\Entity\Interfaces\EventEntityInterface;
 
 /**
  * Class EventEntity
- * @package Narmafzam\FullCalenderBundle\Entity
+ * @package Farshadi73\FullCalenderBundle\Entity
  */
 class EventEntity implements EventEntityInterface
 {
@@ -72,7 +72,7 @@ class EventEntity implements EventEntityInterface
     /**
      * @var Collection
      *
-     * @ORM\OneToMany(targetEntity="Narmafzam\FullCalenderBundle\Entity\Attribute", mappedBy="event", cascade={"persist", "remove"})
+     * @ORM\OneToMany(targetEntity="Farshadi73\FullCalenderBundle\Entity\Attribute", mappedBy="event", cascade={"persist", "remove"})
      */
     protected $attributes;
 

@@ -1,15 +1,15 @@
 <?php
 /**
  * This file is part of fullcalendarbundle
- * Copyrighted by Narmafzam (Farzam Webnegar Sivan Co.), info@narmafzam.com
+ * Copyrighted by Farshadi73 (Farzam Webnegar Sivan Co.), info@farshadi73.com
  * Created by farshad
  * Date: 7/17/18
  */
 
-namespace Narmafzam\FullCalenderBundle\Controller;
+namespace Farshadi73\FullCalenderBundle\Controller;
 
-use Narmafzam\FullCalenderBundle\Event\CalendarEvent;
-use Narmafzam\FullCalenderBundle\Event\Interfaces\CalendarEventInterface;
+use Farshadi73\FullCalenderBundle\Event\CalendarEvent;
+use Farshadi73\FullCalenderBundle\Event\Interfaces\CalendarEventInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
@@ -18,7 +18,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Class CalendarController
- * @package Narmafzam\FullCalenderBundle\Controller
+ * @package Farshadi73\FullCalenderBundle\Controller
  */
 class CalendarController extends Controller
 {

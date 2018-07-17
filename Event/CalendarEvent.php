@@ -1,23 +1,23 @@
 <?php
 /**
  * This file is part of fullcalendarbundle
- * Copyrighted by Narmafzam (Farzam Webnegar Sivan Co.), info@narmafzam.com
+ * Copyrighted by Farshadi73 (Farzam Webnegar Sivan Co.), info@farshadi73.com
  * Created by farshad
  * Date: 7/17/18
  */
 
-namespace Narmafzam\FullCalenderBundle\Event;
+namespace Farshadi73\FullCalenderBundle\Event;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
-use Narmafzam\FullCalenderBundle\Entity\Interfaces\EventEntityInterface;
-use Narmafzam\FullCalenderBundle\Event\Interfaces\CalendarEventInterface;
+use Farshadi73\FullCalenderBundle\Entity\Interfaces\EventEntityInterface;
+use Farshadi73\FullCalenderBundle\Event\Interfaces\CalendarEventInterface;
 use Symfony\Component\EventDispatcher\Event;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class CalendarEvent
- * @package Narmafzam\FullCalenderBundle\Event
+ * @package Farshadi73\FullCalenderBundle\Event
  */
 class CalendarEvent extends Event implements CalendarEventInterface
 {

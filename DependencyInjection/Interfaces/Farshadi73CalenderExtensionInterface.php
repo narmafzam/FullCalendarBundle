@@ -8,13 +8,11 @@
 
 namespace Farshadi73\FullCalenderBundle\DependencyInjection\Interfaces;
 
-use Symfony\Component\Config\Definition\ConfigurationInterface as BaseInterface;
-
 /**
- * Interface ConfigurationInterface
+ * Interface Farshadi73CalenderExtensionInterface
  * @package Farshadi73\FullCalenderBundle\DependencyInjection\Interfaces
  */
-interface ConfigurationInterface extends BaseInterface
+interface Farshadi73CalenderExtensionInterface
 {
 
 }
