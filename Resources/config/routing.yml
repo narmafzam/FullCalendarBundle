@@ -1,0 +1,5 @@
+fullcalendar_loader:
+    path: /fc-load-events
+    defaults: { _controller: Farshadi37:Calendar:loadCalendar }
+    options:
+        expose: true
