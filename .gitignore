@@ -1,2 +1,5 @@
+# PHPStorm Settings
+/.idea/*
+
 # vendor directory
 /vendor/*
