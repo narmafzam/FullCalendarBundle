@@ -6,15 +6,15 @@
  * Date: 7/17/18
  */
 
-namespace Farshadi73\FullCalenderBundle\Entity;
+namespace Narmafzam\FullCalenderBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Farshadi73\FullCalenderBundle\Entity\Interfaces\AttributeInterface;
-use Farshadi73\FullCalenderBundle\Entity\Interfaces\EventEntityInterface;
+use Narmafzam\FullCalenderBundle\Entity\Interfaces\AttributeInterface;
+use Narmafzam\FullCalenderBundle\Entity\Interfaces\EventEntityInterface;
 
 /**
  * Class Attribute
- * @package Farshadi73\FullCalenderBundle\Entity
+ * @package Narmafzam\FullCalenderBundle\Entity
  */
 class Attribute implements AttributeInterface
 {
@@ -31,7 +31,7 @@ class Attribute implements AttributeInterface
     /**
      * @var EventEntityInterface
      *
-     * @ORM\ManyToOne(targetEntity=Farshadi73\FullCalenderBundle\Entity\EventEntity", inversedBy="attributes")
+     * @ORM\ManyToOne(targetEntity=Narmafzam\FullCalenderBundle\Entity\EventEntity", inversedBy="attributes")
      */
     protected $event;
 

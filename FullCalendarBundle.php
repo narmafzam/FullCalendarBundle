@@ -6,13 +6,13 @@
  * Date: 7/17/18
  */
 
-namespace Farshadi73\FullCalenderBundle;
+namespace Narmafzam\FullCalenderBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
  * Class FullCalendarBundle
- * @package Narmafzam\ArchiveBundle
+ * @package Narmafzam\FullCalenderBundle
  */
 class FullCalendarBundle extends Bundle
 {

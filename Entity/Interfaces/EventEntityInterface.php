@@ -6,12 +6,12 @@
  * Date: 7/17/18
  */
 
-namespace Farshadi73\FullCalenderBundle\Entity\Interfaces;
+namespace Narmafzam\FullCalenderBundle\Entity\Interfaces;
 use Doctrine\Common\Collections\Collection;
 
 /**
  * Interface EventEntityInterface
- * @package Farshadi73\FullCalenderBundle\Entity\Interfaces
+ * @package Narmafzam\FullCalenderBundle\Entity\Interfaces
  */
 interface EventEntityInterface
 {

@@ -6,19 +6,19 @@
  * Date: 7/17/18
  */
 
-namespace Farshadi73\FullCalenderBundle\DependencyInjection;
+namespace Narmafzam\FullCalenderBundle\DependencyInjection;
 
-use Farshadi73\FullCalenderBundle\DependencyInjection\Interfaces\Farshadi73CalenderExtensionInterface;
+use Narmafzam\FullCalenderBundle\DependencyInjection\Interfaces\NarmafzamCalenderExtensionInterface;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 
 /**
- * Class Farshadi73CalendarExtension
- * @package Farshadi73\FullCalenderBundle\DependencyInjection
+ * Class NarmafzamCalendarExtension
+ * @package Narmafzam\FullCalenderBundle\DependencyInjection
  */
-class Farshadi73CalendarExtension extends Extension implements Farshadi73CalenderExtensionInterface
+class NarmafzamCalendarExtension extends Extension implements NarmafzamCalenderExtensionInterface
 {
     /**
      * @param array $configs

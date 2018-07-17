@@ -1,17 +1,21 @@
 {
-    "name": "Farshadi73/FullCalendarBundle",
-    "description": "Reusable archive bundle by Farshadi73",
+    "name": "Narmafzam/FullCalendarBundle",
+    "description": "Reusable calendar bundle by Narmafzam",
     "license": "proprietary",
     "type": "symfony-bundle",
     "authors": [
         {
             "name": "Farshad Asgharzade",
-            "email": "farshad_asgharzade@gmail.com"
+            "email": "farshadi73@narmafzam.com"
+        },
+        {
+            "name": "Peyman Mohamadpor",
+            "email": "peyman@narmafzam.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Farshadi73\\FullCalenderBundle\\": ""
+            "Narmafzam\\FullCalenderBundle\\": ""
         }
     },
     "require": {

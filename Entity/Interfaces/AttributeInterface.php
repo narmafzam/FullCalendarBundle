@@ -6,11 +6,11 @@
  * Date: 7/17/18
  */
 
-namespace Farshadi73\FullCalenderBundle\Entity\Interfaces;
+namespace Narmafzam\FullCalenderBundle\Entity\Interfaces;
 
 /**
  * Interface AttributeInterface
- * @package Farshadi73\FullCalenderBundle\Entity\Interfaces
+ * @package Narmafzam\FullCalenderBundle\Entity\Interfaces
  */
 interface AttributeInterface
 {

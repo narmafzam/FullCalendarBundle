@@ -6,7 +6,7 @@
  * Date: 7/17/18
  */
 
-namespace Farshadi73\FullCalenderBundle\Event\Interfaces;
+namespace Narmafzam\FullCalenderBundle\Event\Interfaces;
 
 interface CalendarEventInterface
 {

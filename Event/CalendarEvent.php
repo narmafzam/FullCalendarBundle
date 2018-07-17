@@ -6,18 +6,18 @@
  * Date: 7/17/18
  */
 
-namespace Farshadi73\FullCalenderBundle\Event;
+namespace Narmafzam\FullCalenderBundle\Event;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
-use Farshadi73\FullCalenderBundle\Entity\Interfaces\EventEntityInterface;
-use Farshadi73\FullCalenderBundle\Event\Interfaces\CalendarEventInterface;
+use Narmafzam\FullCalenderBundle\Entity\Interfaces\EventEntityInterface;
+use Narmafzam\FullCalenderBundle\Event\Interfaces\CalendarEventInterface;
 use Symfony\Component\EventDispatcher\Event;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class CalendarEvent
- * @package Farshadi73\FullCalenderBundle\Event
+ * @package Narmafzam\FullCalenderBundle\Event
  */
 class CalendarEvent extends Event implements CalendarEventInterface
 {

@@ -6,10 +6,10 @@
  * Date: 7/17/18
  */
 
-namespace Farshadi73\FullCalenderBundle\Controller;
+namespace Narmafzam\FullCalenderBundle\Controller;
 
-use Farshadi73\FullCalenderBundle\Event\CalendarEvent;
-use Farshadi73\FullCalenderBundle\Event\Interfaces\CalendarEventInterface;
+use Narmafzam\FullCalenderBundle\Event\CalendarEvent;
+use Narmafzam\FullCalenderBundle\Event\Interfaces\CalendarEventInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
@@ -18,7 +18,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Class CalendarController
- * @package Farshadi73\FullCalenderBundle\Controller
+ * @package Narmafzam\FullCalenderBundle\Controller
  */
 class CalendarController extends Controller
 {
